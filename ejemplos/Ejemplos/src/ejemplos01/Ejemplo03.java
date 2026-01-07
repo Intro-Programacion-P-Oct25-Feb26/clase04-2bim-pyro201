@@ -16,6 +16,8 @@ public class Ejemplo03 {
         int valor = obtenerSuma(10, 30); // se invoca al método 
                                          // obtenerSuma
         System.out.printf("El valor de la suma es: %d\n", valor);
+        System.out.printf(suma)// da un error por que la variable suma solo existe en la 
+                                 // funcion obtenerSuma
         
         // System.out.printf("El valor de la suma es: %d\n", obtenerSuma(10, 30));
     }
