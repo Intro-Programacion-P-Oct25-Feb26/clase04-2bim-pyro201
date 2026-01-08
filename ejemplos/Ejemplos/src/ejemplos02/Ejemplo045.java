@@ -22,7 +22,7 @@ public class Ejemplo045 {
         obtenerReporte(arreglo1);
         obtenerReporte(arreglo2);
         obtenerReporte(arreglo3);
-        obtenerReporte(arreglo4);
+        obtenerReporteDos(arreglo4);
     }
 
     public static int[][] matriz3(int[][] a, int[][] b) {
@@ -61,7 +61,16 @@ public class Ejemplo045 {
         }
         System.out.println(cadena);
     }
-
+    public static void obtenerReporteDos(double[][] arreglo1) {
+        String cadena = "";
+        for (int i = 0; i < arreglo1.length; i++) {
+            for (int j = 0; j < arreglo1[i].length; j++) {
+                cadena = String.format("%s%s\t", cadena, arreglo1[i][j]);
+            }
+            cadena = String.format("%s\n", cadena);
+        }
+        System.out.println(cadena);
+    }
     public static int obtenerMultiplicacion(int a, int b) {
         int operacion;
         operacion = a * b;
@@ -70,10 +79,7 @@ public class Ejemplo045 {
     }
 
     public static double obtenerPot(int a, int b) {
-        double operacion;
-        a = (int) (a * 1.00);
-        b = (int) (b * 1.00);
-
+        double operacion; 
         operacion = Math.pow(a, b);
         return operacion;
     }
